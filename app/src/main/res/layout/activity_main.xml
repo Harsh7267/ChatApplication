@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/ivWhatsappIcon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/whatsapp"
+            android:layout_marginTop="100dp"
+            />
+
+        <TextView
+            android:id="@+id/tvOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OTP Verification"
+            android:paddingTop="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tvComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="*Enter the Valid Number as OTP will be sent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/red"
+            android:textSize="15dp" />
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:background="@drawable/backgroundbox"
+            android:hint="Enter Name"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:importantForAutofill="no"
+            android:id="@+id/etUserName"/>
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:hint="Enter Phone Number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:background="@drawable/backgroundbox"
+            android:layout_marginTop="25dp"
+            android:importantForAutofill="no"
+            android:textAlignment="center"
+            />
+
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <Button
+                android:id="@+id/btnGetOTP"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="135dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/backgroundbox"
+                android:text="GET OTP"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <ProgressBar
+                android:id="@+id/pbVerify"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+
+        </FrameLayout>
+
+
+        </LinearLayout>
+
+
+
+</ScrollView>

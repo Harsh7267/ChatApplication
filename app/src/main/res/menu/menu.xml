@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/iNewGroup"
+        android:title="New Group" />
+    <item
+        android:id="@+id/iLinkedDevices"
+        android:title="Linked Devices"/>
+    <item
+        android:id="@+id/iStarredMessages"
+        android:title="Starred Messages"/>
+    <item
+        android:id="@+id/iSettings"
+        android:title="Settings" />
+
+</menu>
